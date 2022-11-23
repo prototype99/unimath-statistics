@@ -13,6 +13,9 @@ soaps <- c(45, 59, 58, 49, 55, 41, 66, 75, 39, 48)
 soapsMean <- mean(soaps)
 soapsDeviat <- sd(soaps)
 # convenience stores have a higher mean price and a wider standard deviation
-# 3.5 | 95% confidence interval for a set of values with a normally distributed standard deviation (z test?)
+# 3.5 | 95% confidence interval for a set of values with a normally distributed standard deviation
 battSamples <- c(20)
 battVariance <- c(1.7^2)
+battVal <- c(battSamples-1)
+chisq = qchisq(c(0.05, 0.95), battVal, lower.tail=FALSE)
+(battVal * battVariance) / chisq
