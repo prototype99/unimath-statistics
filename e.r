@@ -13,3 +13,4 @@ soaps <- c(45, 59, 58, 49, 55, 41, 66, 75, 39, 48)
 soapsMean <- mean(soaps)
 soapsDeviat <- sd(soaps)
 # convenience stores have a higher mean price and a wider standard deviation
+# 3.5 | 95% confidence interval for a set of values with a normally distributed standard deviation (z test?)
