@@ -8,3 +8,8 @@ ratiosMean <- mean(ratios)
 t.test(ratios, conf.level = 0.95, mu = ratiosMean)
 # 3.2.iii | 99% confidence interval for a range of values
 t.test(ratios, conf.level = 0.99, mu = ratiosMean)
+# 3.4 | soap is usually mean price of 50 and standard deviation of 5. do convenience stores fit that trend?
+soaps <- c(45, 59, 58, 49, 55, 41, 66, 75, 39, 48)
+soapsMean <- mean(soaps)
+soapsDeviat <- sd(soaps)
+# convenience stores have a higher mean price and a wider standard deviation
