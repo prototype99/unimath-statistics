@@ -27,3 +27,4 @@ chisq = qchisq(c(0.05, 0.95), battVal, lower.tail=FALSE)
 (24 / 250) * 100
 # percentage is higher than previous 8% sub standard, new equipment is worse
 # 3.12
+read.csv('./balance.csv')
