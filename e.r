@@ -27,4 +27,12 @@ chisq = qchisq(c(0.05, 0.95), battVal, lower.tail=FALSE)
 (24 / 250) * 100
 # percentage is higher than previous 8% sub standard, new equipment is worse
 # 3.12
-read.csv('./balance.csv')
+banks <- read.csv('./balance.csv')
+bank1 <- subset(banks, Branch == 1)
+bank2 <- subset(banks, Branch == 2)
+banksCnt <- nrow(banks)
+bank1Cnt <- nrow(bank1)
+bank2Cnt <- nrow(bank2)
+bank1Cnt / banksCnt
+bank2Cnt / banksCnt
+# use table and do a binomial testtttt
