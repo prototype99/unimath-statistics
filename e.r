@@ -43,3 +43,5 @@ type = factor(rep(c("A", "B"), times=c(8,6)))
 heating <- data.frame(efficiency, type)
 bartlett.test(efficiency ~ type, data=heating)
 leveneTest(efficiency ~ type, data=heating)
+# 5.8
+calories = c(33.9, 34.1, 33.7, 33.9, 34)
