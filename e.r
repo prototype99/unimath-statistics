@@ -36,3 +36,10 @@ bank2Cnt <- nrow(bank2)
 bank1Cnt / banksCnt
 bank2Cnt / banksCnt
 # use table and do a binomial testtttt
+library(car)
+# 5.1
+efficiency = c(72, 78, 73, 69, 75, 74, 69, 75, 78, 76, 81, 74, 82, 75)
+type = factor(rep(c("A", "B"), times=c(8,6)))
+heating <- data.frame(efficiency, type)
+bartlett.test(efficiency ~ type, data=heating)
+leveneTest(efficiency ~ type, data=heating)
